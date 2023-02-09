@@ -7,11 +7,16 @@
    <!--<p><a href="https://mylink?scene1">Launch</a></p>-->
    <!--<p><a href="http://mylink?scene2">Launch with Parameter</a></p>-->
    <p><a href="unitydl://mylink?Page1">scene1</a></p>
-   <p><a href="unitydl://mylink?Page2">scene2</a></p>
+   <p><a id="page2" href="unitydl://mylink?Page2">scene2</a></p>
    <p><a href="unitydl://mylink?www.edubite.deeplink.com">scene3</a></p>
-   <p><a href="https://mylink?www.edubite.deeplink.com">using https scene 1</a></p>
+   <p><a href="https://mylink?www.edubite.deeplink.com">using https scene 3</a></p>
    <!--<p><a href="https://mylink?scene2?www.edubite.deeplink.com">using https scene 2</a></p>-->
 
 
 </body>
 </html>
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('page2').click();
+   });
+</script>
