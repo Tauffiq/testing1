@@ -5,10 +5,7 @@
 <body >
    <h1>Deep Link Edubite Testings</h1>
    <button  id = "acemit"> View Discussion</button>
-   <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p>
-    <button onclick="replaceLocation()">
-    Replace current webpage
-    </button>
+   <!-- <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p> -->
 
     <script>
 
@@ -21,8 +18,13 @@
       let btn = document.getElementById('acemit');
        if(btn){
         btn.addEventListener('click', function(){
-         window.location.replace("unitydl://mylink?Discussion/SinglePage/"+id);})}
+         window.location.replace("unitydl://mylink?Discussion/SinglePage/" + id);})}
         console.log(id);
+
+        function autoClick(){
+         document.getElementById("acemit").click();
+         console.log("clicked");
+        }
 
      </script>
 </body>
