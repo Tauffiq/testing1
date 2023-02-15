@@ -10,7 +10,7 @@
    <a discussionId></a>
 
    <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p>
-
+   <button  id = "acemit"> View Discussion</button>
 
 </body>
 </html>
@@ -18,4 +18,13 @@
    document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('page1').click();
    });
+
+   let id = getUrlParameter('id')
+
+   $('acemit').click(function())
+   {
+      window.location.replace("unitydl://mylink?Discussion/SinglePage/" + id);
+   }
+
+
 </script>
