@@ -11,11 +11,19 @@
     </button>
 
     <script>
-      let id = getUrlParameter('id')
+
+        const queryString = window.location.search;
+
+        const urlParams = new URLSearchParams(queryString);
+
+        const id = urlParams.get('id')
+
       let btn = document.getElementById('acemit');
        if(btn){
         btn.addEventListener('click', function(){
          window.location.replace("unitydl://mylink?Discussion/SinglePage/"+id);})}
+        console.log(id);
+
      </script>
 </body>
   
