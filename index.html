@@ -7,16 +7,16 @@
 
    <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p>
 
-<button  id = "acemit"> View Discussion</button>
+   <button  id = "acemit"> View Discussion</button>
 
-   <script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer">>
 
     let id = getUrlParameter('id')
 
    $('#acemit').click(function(){
       window.location.replace("https://www.youtube.com/");
 
-    //  console.log(id)
+      console.log(id)
    });
 
 </script>
