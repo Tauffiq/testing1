@@ -13,11 +13,18 @@
 
    <script>
 
-    let id = getUrlParameter('id')
+    //let id = getUrlParameter('id')
+
+   const queryString = window.location.search;
+
+   const urlParams = new URLSearchParams(queryString);
+
+   const page_type = urlParams.get('page_type')
+
+   console.log(page_type);
 
   $('#acemit').click(function(){
-      var newloc = "https://www.geeksforgeeks.org/";
-      window.location.replace(newloc);
+      window.location.replace("unitydl://mylink?Discussion/SinglePage/"+id);
       console.log(id)
    });
    
