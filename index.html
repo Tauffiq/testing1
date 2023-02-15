@@ -1,26 +1,22 @@
+<!DOCTYPE html>
 <html>
-<head>
-   <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-</head>
-<body >
-   <h1>Deep Link Edubite Testing</h1>
+  
+<body>
+    <button onclick="replaceLocation()">
+        Replace current webpage
+    </button>
+    <script>
 
-   <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p>
-
-<button  id = "acemit"> View Discussion</button>
-
+        let id = getUrlParameter('id')
+        function replaceLocation() {
+  
+            // Replace the current location
+            // with new location
+            var newloc = "https://www.geeksforgeeks.org/";
+            window.location.replace(newloc);
+            console.log (id)
+        }
+    </script>
 </body>
+  
 </html>
-<script>
-
-   let id = getUrlParameter('id')
-
-   $('#acemit').click(function()
-   {
-      window.location.replace("unitydl://mylink?Discussion/SinglePage/"+id);
-
-      console.log(id)
-   }
-   );
-
-</script>
