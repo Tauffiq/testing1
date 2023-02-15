@@ -5,24 +5,19 @@
 <body >
    <h1>Deep Link Edubite Testing</h1>
 
-   <p><a id="page2" href="unitydl://mylink?userProfile">Profile</a></p>
-
-   <a discussionId></a>
-
    <p> <a id="page1" href="unitydl://mylink?Discussion/SinglePage/160">Launch with Parameter</a> </p>
-   <button  id = "acemit"> View Discussion</button>
+
+<button  id = "acemit"> View Discussion</button>
 
 </body>
 </html>
 <script>
 
-
    let id = getUrlParameter('id')
 
-   $('acemit').click(function())
+   $('#acemit').click(function()
    {
-      window.location.replace("unitydl://mylink?Discussion/SinglePage/" + id);
+      window.location.replace("unitydl://mylink?Discussion/SinglePage/"+id);
    }
-
-
+   );
 </script>
